@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './post-create.component.html',
   styleUrls: ['./post-create.component.css']
 })
-export class PostCreateComponent implements OnInit {
+export class PostCreateComponent {
+  enteredValue = '';
+  newPost = 'NO CONTENT';
 
-  constructor() { }
-
-  ngOnInit(): void {
+  onAddPost() {
+    this.newPost = this.enteredValue;
   }
 
 }
